@@ -1,0 +1,28 @@
+{
+  "document_id": "0341a51b-38bf-4479-a06e-599b01b2c59f",
+  "workflow_id": "finsight-0341a51b-38bf-4479-a06e-599b01b2c59f",
+  "filename": "important-finance.pdf",
+  "status": "REVIEW_COMPLETE",
+  "source_pdf_path": "data\\uploads\\0341a51b-38bf-4479-a06e-599b01b2c59f_important-finance.pdf",
+  "highlighted_pdf_path": "data\\highlighted\\0341a51b-38bf-4479-a06e-599b01b2c59f_highlighted.pdf",
+  "anomalies": [
+    {
+      "anomaly_id": "280156fd-3dc6-4e5e-9437-7ad3416d58b4",
+      "metric_name": "Accounting Equation",
+      "actual_value": 147000000.0,
+      "expected_range": {
+        "min": 157000000.0,
+        "max": 157000000.0
+      },
+      "severity": "CRITICAL",
+      "status": "CORRECT",
+      "description": "Accounting Equation is INR 147,000,000, but related lines total INR 157,000,000.",
+      "source_text": "Accounting Equation",
+      "page": 1,
+      "bbox": [],
+      "score": 0.99,
+      "reason": "Total liabilities and equity should equal total assets.",
+      "reviewer_comment": "Reviewed from Human Check table"
+    }
+  ]
+}

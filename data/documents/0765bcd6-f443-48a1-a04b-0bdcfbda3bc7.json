@@ -1,0 +1,79 @@
+{
+  "document_id": "0765bcd6-f443-48a1-a04b-0bdcfbda3bc7",
+  "workflow_id": "finsight-0765bcd6-f443-48a1-a04b-0bdcfbda3bc7",
+  "filename": "BTPL004_BS_Q3_2024.pdf",
+  "status": "PAUSED_HITL",
+  "source_pdf_path": "data\\uploads\\0765bcd6-f443-48a1-a04b-0bdcfbda3bc7_BTPL004_BS_Q3_2024.pdf",
+  "highlighted_pdf_path": "data\\highlighted\\0765bcd6-f443-48a1-a04b-0bdcfbda3bc7_highlighted.pdf",
+  "anomalies": [
+    {
+      "anomaly_id": "7406b12f-856a-40e2-8564-1a8bc3a00fea",
+      "metric_name": "Retained Earnings / (Accumulated Loss)",
+      "actual_value": 25000000.0,
+      "expected_range": {
+        "min": 42240000.0,
+        "max": 63360000.0
+      },
+      "severity": "CRITICAL",
+      "status": "CORRECT",
+      "description": "Retained Earnings / (Accumulated Loss) is 52.7% lower than the prior filing (current INR 25,000,000; prior INR 52,800,000).",
+      "source_text": "Retained Earnings / (Accumulated Loss) 2,50,00,000",
+      "page": 1,
+      "bbox": [
+        60.0,
+        555.51,
+        285.0,
+        564.88
+      ],
+      "score": 0.94,
+      "reason": "This item changed sharply from the previous quarter.",
+      "reviewer_comment": "Debug script verification"
+    },
+    {
+      "anomaly_id": "64dac55a-b9c2-4e87-93eb-ce1077ed31cf",
+      "metric_name": "TOTAL EQUITY",
+      "actual_value": 50000000.0,
+      "expected_range": {
+        "min": 58240000.0,
+        "max": 87360000.0
+      },
+      "severity": "HIGH",
+      "status": "PENDING",
+      "description": "TOTAL EQUITY is 31.3% lower than the prior filing (current INR 50,000,000; prior INR 72,800,000).",
+      "source_text": "TOTAL EQUITY 5,00,00,000",
+      "page": 1,
+      "bbox": [
+        60.0,
+        577.51,
+        168.0,
+        586.88
+      ],
+      "score": 0.86,
+      "reason": "This item changed sharply from the previous quarter.",
+      "reviewer_comment": null
+    },
+    {
+      "anomaly_id": "31e94cc0-4b7b-4c95-9c01-abd60e5fda55",
+      "metric_name": "Trade Receivables (Net)",
+      "actual_value": 30800000.0,
+      "expected_range": {
+        "min": 0.0,
+        "max": 30799999.999999996
+      },
+      "severity": "MEDIUM",
+      "status": "PENDING",
+      "description": "Trade receivables are 35.0% of current assets. This concentration should be checked against aging and collections.",
+      "source_text": "Trade Receivables (Net) 3,08,00,000",
+      "page": 1,
+      "bbox": [
+        60.0,
+        203.51,
+        217.5,
+        212.88
+      ],
+      "score": 0.72,
+      "reason": "This value is unusually high compared with related asset totals.",
+      "reviewer_comment": null
+    }
+  ]
+}

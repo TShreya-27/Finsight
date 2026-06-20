@@ -1,0 +1,102 @@
+{
+  "document_id": "cb3e04ec-364f-49ad-89bb-0297fe39620a",
+  "workflow_id": "finsight-cb3e04ec-364f-49ad-89bb-0297fe39620a",
+  "filename": "BTPL004_BS_Q3_2024.pdf",
+  "status": "PAUSED_HITL",
+  "source_pdf_path": "data\\uploads\\cb3e04ec-364f-49ad-89bb-0297fe39620a_BTPL004_BS_Q3_2024.pdf",
+  "highlighted_pdf_path": "data\\highlighted\\cb3e04ec-364f-49ad-89bb-0297fe39620a_highlighted.pdf",
+  "anomalies": [
+    {
+      "anomaly_id": "824ee9e3-8fbd-4ebf-a3e8-3ff3e8419f09",
+      "metric_name": "Long-Term Borrowings Leverage",
+      "actual_value": 31500000.0,
+      "expected_range": {
+        "min": 0.0,
+        "max": 25000000.0
+      },
+      "severity": "HIGH",
+      "status": "CORRECT",
+      "description": "Long-term borrowings are INR 31,500,000, more than 50% of equity INR 50,000,000.",
+      "source_text": "Long-Term Borrowings 3,15,00,000",
+      "page": 1,
+      "bbox": [
+        60.0,
+        456.51,
+        204.0,
+        465.88
+      ],
+      "score": 0.84,
+      "reason": "Long-term borrowings are high relative to equity and need manual review.",
+      "reviewer_comment": "Reviewed from Human Check table"
+    },
+    {
+      "anomaly_id": "bc584cdf-c0a1-4a2c-9623-b0b6d7656c80",
+      "metric_name": "Retained Earnings / (Accumulated Loss)",
+      "actual_value": 25000000.0,
+      "expected_range": {
+        "min": 42240000.0,
+        "max": 63360000.0
+      },
+      "severity": "CRITICAL",
+      "status": "PENDING",
+      "description": "Retained Earnings / (Accumulated Loss) is 52.7% lower than the prior filing (current INR 25,000,000; prior INR 52,800,000).",
+      "source_text": "Retained Earnings / (Accumulated Loss) 2,50,00,000",
+      "page": 1,
+      "bbox": [
+        60.0,
+        555.51,
+        285.0,
+        564.88
+      ],
+      "score": 0.94,
+      "reason": "This item changed sharply from the previous quarter.",
+      "reviewer_comment": null
+    },
+    {
+      "anomaly_id": "0a605dd0-950d-485f-abb0-ae99de500dc0",
+      "metric_name": "TOTAL EQUITY",
+      "actual_value": 50000000.0,
+      "expected_range": {
+        "min": 58240000.0,
+        "max": 87360000.0
+      },
+      "severity": "HIGH",
+      "status": "PENDING",
+      "description": "TOTAL EQUITY is 31.3% lower than the prior filing (current INR 50,000,000; prior INR 72,800,000).",
+      "source_text": "TOTAL EQUITY 5,00,00,000",
+      "page": 1,
+      "bbox": [
+        60.0,
+        577.51,
+        168.0,
+        586.88
+      ],
+      "score": 0.86,
+      "reason": "This item changed sharply from the previous quarter.",
+      "reviewer_comment": null
+    },
+    {
+      "anomaly_id": "57f5909b-3d7c-45df-86ec-77d7d4ed1c95",
+      "metric_name": "Trade Receivables (Net)",
+      "actual_value": 30800000.0,
+      "expected_range": {
+        "min": 0.0,
+        "max": 30799999.999999996
+      },
+      "severity": "MEDIUM",
+      "status": "PENDING",
+      "description": "Trade receivables are 35.0% of current assets. This concentration should be checked against aging and collections.",
+      "source_text": "Trade Receivables (Net) 3,08,00,000",
+      "page": 1,
+      "bbox": [
+        60.0,
+        203.51,
+        217.5,
+        212.88
+      ],
+      "score": 0.72,
+      "reason": "This value is unusually high compared with related asset totals.",
+      "reviewer_comment": null
+    }
+  ]
+}

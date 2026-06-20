@@ -1,0 +1,17 @@
+agno
+asyncpg
+redis
+pydantic
+sqlalchemy
+pydantic-settings
+python-dotenv
+httpx
+aiosmtplib
+groq
+fastapi
+uvicorn
+python-multipart
+temporalio
+psycopg2-binary
+reportlab
+pymupdf

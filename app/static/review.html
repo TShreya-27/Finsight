@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FinSight Human Review</title>
+    <link rel="stylesheet" href="/static/styles.css?v=9" />
+  </head>
+  <body class="human-check-page">
+    <main class="human-check-shell">
+      <section class="human-check-panel">
+        <div class="human-check-top">
+          <h1>Human Check</h1>
+          <div class="human-check-actions">
+            <a class="dashboard-back" href="/dashboard?refresh=1">Back to Dashboard</a>
+            <a id="open-pdf-link" class="open-link" href="#" target="_blank" rel="noreferrer">Open PDF</a>
+          </div>
+        </div>
+
+        <div class="review-meta" aria-label="Processing details">
+          <span>Document: <strong id="document-id">Loading...</strong></span>
+          <span>Status: <strong id="status-text">Loading...</strong></span>
+          <span>Flags: <strong id="anomaly-count">0</strong></span>
+          <span>Workflow: <strong id="workflow-id">Loading...</strong></span>
+        </div>
+
+        <div class="human-check-grid">
+          <div id="anomaly-list" class="human-table-wrap" aria-live="polite"></div>
+          <div class="pdf-display">
+            <iframe id="pdf-frame" title="Flagged PDF display"></iframe>
+            <div class="pdf-placeholder">Flagged Pdf<br />display here</div>
+          </div>
+        </div>
+        <p id="message" class="message" role="status"></p>
+      </section>
+    </main>
+
+    <script src="/static/review.js?v=9"></script>
+  </body>
+</html>

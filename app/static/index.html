@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FinSight</title>
+    <link rel="stylesheet" href="/static/styles.css?v=9" />
+  </head>
+  <body class="welcome-page">
+    <main class="welcome-shell">
+      <nav class="navbar" aria-label="Primary">
+        <div class="navbar-content">
+          <a class="navbar-brand" href="/">FinSight</a>
+          <div class="auth-buttons">
+            <button class="login-btn" id="open-auth" type="button">Login</button>
+            <button class="signup-btn" id="open-signup" type="button">Sign Up</button>
+          </div>
+        </div>
+      </nav>
+      <div class="logo-container">
+        <img src="static/home.png" alt="FinSight Logo" class="logo">
+      </div>
+      <section class="welcome-panel" aria-labelledby="welcome-title">
+        <h1 id="welcome-title">Welcome to FinSight</h1>
+        <p>Login or sign up to upload PDFs and review anomaly checks.</p>
+      </section>
+
+      <div id="auth-modal" class="auth-modal hidden" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+        <div class="auth-box">
+          <button id="close-auth" class="close-auth" type="button" aria-label="Close login dialog">&times;</button>
+          <h2 id="auth-title">Login</h2>
+          <input type="email" id="login-email" placeholder="Email" autocomplete="email" />
+          <input type="password" id="login-password" placeholder="Password" autocomplete="current-password" />
+          <button id="login-submit" type="button">Login</button>
+          <p id="login-message"></p>
+        </div>
+      </div>
+    </main>
+    <script src="/static/app.js" defer></script>
+  </body>
+</html>

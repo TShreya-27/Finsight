@@ -1,0 +1,171 @@
+{
+  "document_id": "6ce1a3c5-0127-4ef6-831d-943bcdcf9844",
+  "workflow_id": "finsight-6ce1a3c5-0127-4ef6-831d-943bcdcf9844",
+  "filename": "FRSL001_PL_Q3_2024.pdf",
+  "status": "PAUSED_HITL",
+  "source_pdf_path": "data\\uploads\\6ce1a3c5-0127-4ef6-831d-943bcdcf9844_FRSL001_PL_Q3_2024.pdf",
+  "highlighted_pdf_path": "data\\highlighted\\6ce1a3c5-0127-4ef6-831d-943bcdcf9844_highlighted.pdf",
+  "anomalies": [
+    {
+      "anomaly_id": "574856d0-47a1-454a-99b3-011dc32b9c37",
+      "metric_name": "Cost of Goods Sold (COGS)",
+      "actual_value": 21700000.0,
+      "expected_range": {
+        "min": 0.0,
+        "max": 7750000.0
+      },
+      "severity": "HIGH",
+      "status": "INCORRECT",
+      "description": "Cost of Goods Sold (COGS) is INR 21,700,000, equal to 70.0% of revenue and requires HITL verification.",
+      "source_text": "Cost of Goods Sold (COGS) 2,17,00,000",
+      "page": 1,
+      "bbox": [
+        60.0,
+        247.51,
+        226.5,
+        256.88
+      ],
+      "score": 0.86,
+      "reason": "This value is unusually high compared with revenue in the same filing.",
+      "reviewer_comment": "Reviewed from Human Check table"
+    },
+    {
+      "anomaly_id": "68d46cbc-2918-4848-a0cf-8974844294a6",
+      "metric_name": "GROSS PROFIT (A - COGS)",
+      "actual_value": 9300000.0,
+      "expected_range": {
+        "min": 0.0,
+        "max": 7750000.0
+      },
+      "severity": "HIGH",
+      "status": "PENDING",
+      "description": "GROSS PROFIT (A - COGS) is INR 9,300,000, equal to 30.0% of revenue and requires HITL verification.",
+      "source_text": "GROSS PROFIT (A - COGS) 93,00,000",
+      "page": 1,
+      "bbox": [
+        60.0,
+        269.51,
+        208.5,
+        278.88
+      ],
+      "score": 0.86,
+      "reason": "This value is unusually high compared with revenue in the same filing.",
+      "reviewer_comment": null
+    },
+    {
+      "anomaly_id": "6bcffa9b-d6ab-4814-81c2-7ff6548cba16",
+      "metric_name": "TOTAL OPERATING EXPENSES",
+      "actual_value": 15500000.0,
+      "expected_range": {
+        "min": 0.0,
+        "max": 7750000.0
+      },
+      "severity": "HIGH",
+      "status": "PENDING",
+      "description": "TOTAL OPERATING EXPENSES is INR 15,500,000, equal to 50.0% of revenue and requires HITL verification.",
+      "source_text": "TOTAL OPERATING EXPENSES 1,55,00,000",
+      "page": 1,
+      "bbox": [
+        60.0,
+        346.51,
+        222.0,
+        355.88
+      ],
+      "score": 0.86,
+      "reason": "This value is unusually high compared with revenue in the same filing.",
+      "reviewer_comment": null
+    },
+    {
+      "anomaly_id": "9fc666de-c50a-4e21-bcf6-e3b02f60c4d8",
+      "metric_name": "EARNINGS BEFORE INTEREST, TAX, D&A (EBITDA)",
+      "actual_value": -6200000.0,
+      "expected_range": {
+        "min": 0.0,
+        "max": 6200000.0
+      },
+      "severity": "CRITICAL",
+      "status": "PENDING",
+      "description": "EARNINGS BEFORE INTEREST, TAX, D&A (EBITDA) is INR -6,200,000, equal to 20.0% of revenue and requires HITL verification.",
+      "source_text": "EARNINGS BEFORE INTEREST, TAX, D&A (EBITDA) (62,00,000)",
+      "page": 1,
+      "bbox": [
+        60.0,
+        368.51,
+        307.5,
+        377.88
+      ],
+      "score": 0.95,
+      "reason": "This item changed sharply enough to require manual verification.",
+      "reviewer_comment": null
+    },
+    {
+      "anomaly_id": "b9bcc6ac-b5fa-4ec2-8021-99cc9c19d1a0",
+      "metric_name": "EARNINGS BEFORE INTEREST & TAX (EBIT)",
+      "actual_value": -7700000.0,
+      "expected_range": {
+        "min": 0.0,
+        "max": 6200000.0
+      },
+      "severity": "CRITICAL",
+      "status": "PENDING",
+      "description": "EARNINGS BEFORE INTEREST & TAX (EBIT) is INR -7,700,000, equal to 24.8% of revenue and requires HITL verification.",
+      "source_text": "EARNINGS BEFORE INTEREST & TAX (EBIT) (77,00,000)",
+      "page": 1,
+      "bbox": [
+        60.0,
+        390.51,
+        280.5,
+        399.88
+      ],
+      "score": 0.95,
+      "reason": "This item changed sharply enough to require manual verification.",
+      "reviewer_comment": null
+    },
+    {
+      "anomaly_id": "7d05c729-595f-4f01-9666-bd615c75ff51",
+      "metric_name": "PROFIT / (LOSS) BEFORE TAX (PBT)",
+      "actual_value": -8500000.0,
+      "expected_range": {
+        "min": 0.0,
+        "max": 6200000.0
+      },
+      "severity": "CRITICAL",
+      "status": "PENDING",
+      "description": "PROFIT / (LOSS) BEFORE TAX (PBT) is INR -8,500,000, equal to 27.4% of revenue and requires HITL verification.",
+      "source_text": "PROFIT / (LOSS) BEFORE TAX (PBT) (85,00,000)",
+      "page": 1,
+      "bbox": [
+        60.0,
+        412.51,
+        258.0,
+        421.88
+      ],
+      "score": 0.95,
+      "reason": "This item changed sharply enough to require manual verification.",
+      "reviewer_comment": null
+    },
+    {
+      "anomaly_id": "0060c689-e364-481a-84f8-18620feed9bd",
+      "metric_name": "NET PROFIT / (LOSS) AFTER TAX",
+      "actual_value": -8500000.0,
+      "expected_range": {
+        "min": 0.0,
+        "max": 6200000.0
+      },
+      "severity": "CRITICAL",
+      "status": "PENDING",
+      "description": "NET PROFIT / (LOSS) AFTER TAX is INR -8,500,000, equal to 27.4% of revenue and requires HITL verification.",
+      "source_text": "NET PROFIT / (LOSS) AFTER TAX (85,00,000)",
+      "page": 1,
+      "bbox": [
+        60.0,
+        445.51,
+        244.5,
+        454.88
+      ],
+      "score": 0.95,
+      "reason": "This item changed sharply enough to require manual verification.",
+      "reviewer_comment": null
+    }
+  ]
+}

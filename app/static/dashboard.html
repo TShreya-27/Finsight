@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FinSight Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body class="dashboard-page">
+    <main class="dashboard-shell">
+      <div class="corner-lines corner-lines-top" aria-hidden="true"></div>
+      <div class="corner-lines corner-lines-bottom" aria-hidden="true"></div>
+
+      <nav class="dashboard-nav" aria-label="Account">
+        <button class="logout-btn" id="logout-button" type="button">Logout</button>
+      </nav>
+
+      <section class="dashboard-panel" aria-labelledby="dashboard-title">
+        <h1 id="dashboard-title">Welcome, <span id="dashboard-user">user</span></h1>
+
+        <div class="dashboard-actions">
+          <form id="upload-form" class="dashboard-upload">
+            <input id="pdf-input" name="file" type="file" accept="application/pdf,.pdf" />
+            <label for="pdf-input" class="dashboard-action" id="upload-label">
+              <span class="upload-icon" aria-hidden="true"></span>
+              <span>Upload New PDF</span>
+            </label>
+            <button id="upload-button" class="visually-hidden" type="submit">Upload PDF</button>
+          </form>
+
+          <button id="previous-toggle" class="dashboard-action dashboard-link" type="button">
+            View Previous PDFs
+          </button>
+        </div>
+
+        <p id="file-subtitle" class="dashboard-file"></p>
+        <p id="message" class="message" role="status"></p>
+
+        <section id="previous-panel" class="previous-panel hidden" aria-labelledby="previous-title">
+          <h2 id="previous-title">Previous PDFs</h2>
+          <div id="previous-list" class="previous-list"></div>
+        </section>
+      </section>
+
+      <div id="auth-modal" class="auth-modal hidden" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+        <div class="auth-box">
+          <button id="close-auth" class="close-auth" type="button" aria-label="Close login dialog">&times;</button>
+          <h2 id="auth-title">Login</h2>
+          <input type="email" id="login-email" placeholder="Email" autocomplete="email" />
+          <input type="password" id="login-password" placeholder="Password" autocomplete="current-password" />
+          <button id="login-submit" type="button">Login</button>
+          <p id="login-message"></p>
+        </div>
+      </div>
+    </main>
+    <script src="/static/app.js?v=9" defer></script>
+  </body>
+</html>

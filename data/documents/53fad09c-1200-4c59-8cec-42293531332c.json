@@ -1,0 +1,33 @@
+{
+  "document_id": "53fad09c-1200-4c59-8cec-42293531332c",
+  "workflow_id": "finsight-53fad09c-1200-4c59-8cec-42293531332c",
+  "filename": "sample.pdf",
+  "status": "PAUSED_HITL",
+  "source_pdf_path": "data\\uploads\\53fad09c-1200-4c59-8cec-42293531332c_sample.pdf",
+  "highlighted_pdf_path": "data\\highlighted\\53fad09c-1200-4c59-8cec-42293531332c_highlighted.pdf",
+  "anomalies": [
+    {
+      "anomaly_id": "b70028c5-dcd3-4a22-a793-264cb3150002",
+      "metric_name": "TOTAL OPERATING EXPENSES",
+      "actual_value": 9500000.0,
+      "expected_range": {
+        "min": 0.0,
+        "max": 8000000.0
+      },
+      "severity": "HIGH",
+      "status": "PENDING",
+      "description": "TOTAL OPERATING EXPENSES is INR 9,500,000, equal to 95.0% of revenue and requires HITL verification.",
+      "source_text": "TOTAL OPERATING EXPENSES 95,00,000",
+      "page": 1,
+      "bbox": [
+        72.0,
+        84.18,
+        289.65,
+        99.29
+      ],
+      "score": 0.91,
+      "reason": "This value is unusually high compared with revenue in the same filing.",
+      "reviewer_comment": null
+    }
+  ]
+}
