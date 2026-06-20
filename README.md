@@ -10,7 +10,7 @@ This repository splits the original monolithic `agents.py` into a package with:
 - agents
 - teams
 - workflows
-
+Full Video Demo: https://drive.google.com/file/d/1E0lL6QTdBpB8PJKB0VK1WywnxfsH6H_Z/view?usp=sharing
 ## Run locally
 
 ### 1. Create and activate a virtual environment
