@@ -1,3 +1,0 @@
-INFO:     127.0.0.1:62013 - "GET /api/v1/health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:49692 - "GET / HTTP/1.1" 200 OK
-INFO:     127.0.0.1:57096 - "GET /review/sample HTTP/1.1" 200 OK
